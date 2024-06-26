@@ -1,49 +1,82 @@
+/* h2 {
+color: azure;
+ } */
+ .aha{
+    text-align: center;
+ }
+ 
+ .reservationDataaaa{
+ 
+    color: black;
+ }
+ .cartDataa{
+    color:black;
+   
+ }
+ 
+
 .adminContainer {
-    padding: 20px;
-    max-width: 800px;
+    max-width: 800px; 
     margin: 0 auto;
-    background-color: #f9f9f9;
+    padding: 20px;
+ 
+    border: 1px solid #ddd; 
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  h1 {
+  .adminContainer h1 {
+    font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
-    /* color: #333; */
   }
   
-  .userInfo, .reservationData, .cartData {
-    margin-bottom: 20px;
+  .userInfooo {
+    background-color: #fff; 
     padding: 15px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
   }
   
-  .userInfo p, .reservationData p, .cartData p {
+  .userInfooo p {
     margin: 5px 0;
-    color: #555;
   }
   
-  h2 {
+  .reservationDataaaa, .cartDataa {
+    background-color: #fff; 
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .reservationDataaaa h2, .cartDataa h2 {
+    font-size: 20px;
     margin-bottom: 10px;
-    /* color: #666; */
-    color: white;
   }
   
-  ul {
+  .reservationDataaaa ul, .cartDataa ul {
     list-style: none;
     padding: 0;
   }
   
-  li {
+  .reservationDataaaa ul li, .cartDataa ul li {
     margin-bottom: 10px;
-    padding: 10px;
-    border-bottom: 1px solid #eee;
   }
   
-  li:last-child {
-    border-bottom: none;
+  .reservationDataaaa ul li p, .cartDataa ul li p {
+    margin: 5px 0;
+  }
+  
+  .noDataMessage {
+    font-style: italic;
+    color: #888;
+  }
+  
+  /* Responsive adjustments (optional) */
+  @media (max-width: 768px) {
+    .adminContainer {
+      padding: 10px;
+    }
   }
   

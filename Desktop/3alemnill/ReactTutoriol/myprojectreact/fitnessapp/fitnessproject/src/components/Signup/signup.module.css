@@ -66,4 +66,20 @@ button[type='submit']:hover {
   color: #FF1414;
   border: 1px solid #FF1414;
 }
- 
+.already{
+  text-align: center;
+  margin-left: 250px;
+}
+/* .pss{
+  text-align: center;
+  margin-left: 500px;
+} */
+b{
+  margin-left: 600px;
+  /* margin-top: -120px; */
+  color: #ffffff;
+  font-size: 20px;
+}
+b a {
+  color: red;
+}

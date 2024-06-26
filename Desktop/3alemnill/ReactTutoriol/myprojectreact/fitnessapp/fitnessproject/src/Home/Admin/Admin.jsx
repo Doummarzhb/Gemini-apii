@@ -6,6 +6,7 @@ function Admin() {
   const [cartData, setCartData] = useState([]);
   const [formData, setFormData] = useState(null);
   const [loginData, setLoginData] = useState(null);
+  const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     const storedReservationData = localStorage.getItem('reservationData');
@@ -23,31 +24,49 @@ function Admin() {
       setFormData(JSON.parse(storedFormData));
     }
 
-    const storedLoginData = localStorage.getItem('loginData');
-    if (storedLoginData) {
-      setLoginData(JSON.parse(storedLoginData));
-    }
-  }, []);
+//     const storedLoginData = localStorage.getItem('loginData');
+//     if (storedLoginData) {
+//       setLoginData(JSON.parse(storedLoginData));
+//     } else {
+//       setFormData({ name: 'Admin', email: 'admin@example.com' });
+//     }
+//   }, []);
+
+  const storedLoginData = localStorage.getItem('loginData');
+  if (storedLoginData) {
+    const loginInfo = JSON.parse(storedLoginData);
+    setFormData(loginInfo);
+    setIsAdmin(loginInfo.email === 'admin@example.com'); // Check if admin
+  } else {
+    // Default admin info if no login data found
+    setFormData({ name: 'Admin', email: 'admin@example.com' });
+    setIsAdmin(true); // Assume admin
+  }
+}, []);
 
   return (
     <div className={styles.adminContainer}>
       <h1>Admin Page</h1>
       {formData && (
-        <div className={styles.userInfo}>
-          <p><strong>Username:</strong> {formData.name}</p>
+        <div className={styles.userInfooo}>
+          {isAdmin ? (
+            <p><strong>Admin Name:</strong> {formData.name}</p>
+          ) : (
+            <p><strong>User Name:</strong> {formData.name}</p>
+          )}
           <p><strong>Email:</strong> {formData.email}</p>
         </div>
       )}
-      <div className={styles.reservationData}>
+      <div className={styles.reservationDataaaa}>
         <h2>Reservations</h2>
         {reservationData.length > 0 ? (
           <ul>
             {reservationData.map((reservation, index) => (
               <li key={index}>
-                <p><strong>Name:</strong> {reservation.fullName}</p>
+                <p><strong>Full Name:</strong> {reservation.fullName}</p>
                 <p><strong>Email:</strong> {reservation.email}</p>
-                <p><strong>Phone:</strong> {reservation.phoneNumber}</p>
-                <p><strong>Month:</strong> {reservation.selectedMonth}</p>
+                <p><strong>Phone Number:</strong> {reservation.phoneNumber}</p>
+                <p><strong>Selected Month:</strong> {reservation.selectedMonth}</p>
               </li>
             ))}
           </ul>
@@ -55,13 +74,13 @@ function Admin() {
           <p>No reservations found.</p>
         )}
       </div>
-      <div className={styles.cartData}>
+      <div className={styles.cartDataa}>
         <h2>Shopping Cart</h2>
         {cartData.length > 0 ? (
           <ul>
             {cartData.map((item, index) => (
               <li key={index}>
-                <p><strong>Item:</strong> {item.name}</p>
+                <p><strong>Item Name:</strong> {item.name}</p>
                 <p><strong>Price:</strong> {item.price}</p>
               </li>
             ))}

@@ -65,11 +65,11 @@ function Reservation() {
           />
         </div>
         <div className={styles.formGroupp}>
-          <label htmlFor="month">Selected Month</label>
+          <label htmlFor="selectedMonth">Selected Month</label>
           <input
             type="month"
-            id="month"
-            name="month"
+            id="selectedMonth"
+            name="selectedMonth"
             value={formData.month}
             onChange={handleChange}
             required

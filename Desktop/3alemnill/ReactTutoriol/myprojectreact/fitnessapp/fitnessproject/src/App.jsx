@@ -15,7 +15,7 @@ import Nutrition from './Home/Nutrition/Nutrition';
 import Admin from './Home/Admin/Admin';
 import UserAccount from './Home/UserAccount/UserAccount';
 import SocialPage from './Home/Socialpage/Socialpage';
-
+import Login from './components/Login/Login';
 function AppContent() {
   const location = useLocation();
   const isSignUpPage = location.pathname === '/signup';
@@ -27,6 +27,8 @@ function AppContent() {
   const isAdminPage = location.pathname === '/admin';
   const isUserAccountPage = location.pathname === '/useraccount';
   const isSocialpage =location.pathname ==='/socialpage';
+  const isLogin =location.pathname ==='/login';
+
 
 
   return (
@@ -38,12 +40,12 @@ function AppContent() {
       {!isSignUpPage && !isHomePage && <About />} */}
       {/* {isHomePage && <Reservation />} */}
 
-      {!(isSignUpPage || isHomePage || isReservationPage || isToolsPage || isShoppingPage  || isNutrition  || isAdminPage || isUserAccountPage || isSocialpage)   && <Navbar />}
-      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage   && !isShoppingPage && !isNutrition && !isAdminPage && !isUserAccountPage && ! isSocialpage && <Header />}
-      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&  !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage &&<Feature />}
-      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&  !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage && <Offer />}
-      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&   !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage && <About />}
-      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&   !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage && <Contact />}
+      {!(isSignUpPage || isHomePage || isReservationPage || isToolsPage || isShoppingPage  || isNutrition  || isAdminPage || isUserAccountPage || isSocialpage || isLogin)   && <Navbar />}
+      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage   && !isShoppingPage && !isNutrition && !isAdminPage && !isUserAccountPage && ! isSocialpage &&  !isLogin && <Header />}
+      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&  !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage &&  !isLogin && <Feature />}
+      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&  !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage &&   !isLogin && <Offer />}
+      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&   !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage &&  !isLogin &&  <About />}
+      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&   !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage &&  !isLogin &&  <Contact />}
 
       <Routes>
         <Route path="/contact" element={<Contact />} />
@@ -56,6 +58,7 @@ function AppContent() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/useraccount" element={<UserAccount />} />
         <Route path="/socialpage" element={<SocialPage />} />
+        <Route path="/login" element={<Login />} />
 
 
 

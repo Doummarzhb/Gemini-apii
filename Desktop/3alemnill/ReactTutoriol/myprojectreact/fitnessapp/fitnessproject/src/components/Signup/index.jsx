@@ -94,8 +94,14 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+    const isAdmin = formData.email === 'admin@example.com' && formData.password === 'admin123';
     localStorage.setItem('formData', JSON.stringify(formData));
-    navigate('/home'); 
+    if (isAdmin) {
+      localStorage.setItem('isAdmin', 'true');
+      navigate('/admin'); 
+    } else {
+      navigate('/home');  
+    }
   };
 
   return (
@@ -137,7 +143,10 @@ function SignUp() {
             />
           </div>
           <button type="submit">Sign Up</button>
+         
         </form>
+        <div className='pss'> 
+        <b>Already have an account?  <a href="/login" className='already' >login </a>...</b></div>
       </div>
     </div>
   );

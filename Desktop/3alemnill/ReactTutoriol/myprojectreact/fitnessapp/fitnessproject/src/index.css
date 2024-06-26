@@ -12,6 +12,7 @@ body{
 }
 ul{
     list-style: none;
+    
 }
 a{
     text-decoration: none;
@@ -328,12 +329,12 @@ nav .menu-btn,
     margin: 0px;
 	padding: 0px;
 }
-.about-text p{
+/* .about-text p{
     width: 80%;
 	font-size: 1.2rem;
 	color:#cecece;
 	
-}
+} */
 .about-text button{
     margin-top: 20px;
 	width: 140px;
