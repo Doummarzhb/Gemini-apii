@@ -52,16 +52,16 @@ function Navbar() {
           </ScrollLink>
         </li>
         <li>
-          <ScrollLink to="contact" smooth={true} duration={500}>
+          <ScrollLink to="/contact" smooth={true} duration={500}>
             Contact
           </ScrollLink>
         </li>
         <li>
           <RouterLink to="/signup">Sign Up</RouterLink>
         </li>
-        <li>
+        {/* <li>
           <RouterLink to="/home">Service</RouterLink>  
-        </li>
+        </li> */}
 
       </ul>
     </nav>

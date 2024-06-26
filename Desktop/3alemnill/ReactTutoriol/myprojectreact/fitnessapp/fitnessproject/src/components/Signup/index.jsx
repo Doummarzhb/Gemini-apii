@@ -94,18 +94,19 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    navigate('/Home'); 
+    localStorage.setItem('formData', JSON.stringify(formData));
+    navigate('/home'); 
   };
 
   return (
     <div className='center'> 
       <div className="signup-container">
         <form className="signup-form" onSubmit={handleSubmit}>
-          <h2>Sign Up</h2>
+          <h1>Sign Up</h1>
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input
-              type="text"
+              type="textt"
               id="name"
               name="name"
               value={formData.name}
