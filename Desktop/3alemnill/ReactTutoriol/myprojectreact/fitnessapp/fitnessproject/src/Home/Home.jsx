@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './Hom.module.css';  
 import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 function Home() {
   const [formData, setFormData] = useState(null);
   const navigate = useNavigate();
@@ -19,7 +20,8 @@ function Home() {
 
   return (
     <div className={styles.homeContainer}>
-         <nav className={styles.nava}>
+      <Navbar/>
+         {/* <nav className={styles.nava}>
       <ul className={styles.navaLi}>
         
         <li className={styles.navIt}>
@@ -29,8 +31,8 @@ function Home() {
           <Link to="/useraccount" className={styles.navLi}>Myaccount</Link>
         </li>
       </ul>
-    </nav>
-      <h1 className={styles.homeText}>Welcome to the Home Page!</h1>
+    </nav> */}
+      {/* <h1 className={styles.homeText}>Welcome to the Home Page!</h1> */}
       {/* {formData && (
         <div className={styles.welcomeMessage}>
           <p>Hello, {formData.name}!</p>

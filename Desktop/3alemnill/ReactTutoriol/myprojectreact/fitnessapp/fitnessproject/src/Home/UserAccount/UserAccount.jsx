@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './UserAccount.module.css';
+import Navbar from '../../components/Navbar';
 
 function UserAccount() {
   const [formData, setFormData] = useState(null);
@@ -32,6 +33,7 @@ function UserAccount() {
 
   return (
     <div className={styles.userAccountContainer}>
+        <Navbar/>
       <h4>User Account</h4>
       {formData ? (
         <div className={styles.userInfo}>

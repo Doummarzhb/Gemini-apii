@@ -28,6 +28,7 @@ function AppContent() {
   const isUserAccountPage = location.pathname === '/useraccount';
   const isSocialpage =location.pathname ==='/socialpage';
   const isLogin =location.pathname ==='/login';
+  const iscontact =location.pathname ==='/contact'
 
 
 
@@ -40,12 +41,12 @@ function AppContent() {
       {!isSignUpPage && !isHomePage && <About />} */}
       {/* {isHomePage && <Reservation />} */}
 
-      {!(isSignUpPage || isHomePage || isReservationPage || isToolsPage || isShoppingPage  || isNutrition  || isAdminPage || isUserAccountPage || isSocialpage || isLogin)   && <Navbar />}
-      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage   && !isShoppingPage && !isNutrition && !isAdminPage && !isUserAccountPage && ! isSocialpage &&  !isLogin && <Header />}
-      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&  !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage &&  !isLogin && <Feature />}
-      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&  !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage &&   !isLogin && <Offer />}
-      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&   !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage &&  !isLogin &&  <About />}
-      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&   !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage &&  !isLogin &&  <Contact />}
+      {!(isSignUpPage || isHomePage || isReservationPage || isToolsPage || isShoppingPage  || isNutrition  || isAdminPage || isUserAccountPage || isSocialpage || isLogin || iscontact)   && <Navbar />}
+      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage   && !isShoppingPage && !isNutrition && !isAdminPage && !isUserAccountPage && ! isSocialpage &&  !isLogin && ! iscontact && <Header />}
+      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&  !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage &&  !isLogin &&  ! iscontact &&<Feature />}
+      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&  !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage &&   !isLogin &&  ! iscontact &&<Offer />}
+      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&   !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage &&  !isLogin &&  ! iscontact && <About />}
+      {!isSignUpPage && !isHomePage && !isReservationPage && !isToolsPage &&   !isShoppingPage && !isNutrition &&  !isAdminPage &&  !isUserAccountPage && ! isSocialpage &&  !isLogin && ! iscontact && <Contact />}
 
       <Routes>
         <Route path="/contact" element={<Contact />} />

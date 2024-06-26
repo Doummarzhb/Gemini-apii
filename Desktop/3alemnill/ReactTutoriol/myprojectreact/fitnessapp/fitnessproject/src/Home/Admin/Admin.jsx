@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Admin.module.css';
+import Navbar from '../../components/Navbar';
 
 function Admin() {
   const [reservationData, setReservationData] = useState([]);
@@ -46,6 +47,7 @@ function Admin() {
 
   return (
     <div className={styles.adminContainer}>
+        <Navbar/>
       <h1>Admin Page</h1>
       {formData && (
         <div className={styles.userInfooo}>

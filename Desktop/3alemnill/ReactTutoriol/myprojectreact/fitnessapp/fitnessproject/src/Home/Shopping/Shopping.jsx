@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Shopping.module.css';
 import Cart from '../cart/cart'
+import Navbar from '../../components/Navbar';
 
 function Shopping() {
   const [cart, setCart] = useState([]);
@@ -29,21 +30,21 @@ function Shopping() {
       name: 'Whey Protein',
       description: 'High-quality protein supplement for muscle growth.',
       price: '$49.99',
-      image: '/src/components/images/protein.jpeg' 
+      image: '/src/components/images/one.jpeg' 
     },
     {
       id: 2,
       name: 'Plant-based Protein',
       description: 'Vegan-friendly protein source for muscle recovery.',
       price: '$39.99',
-      image: '/src/components/images/food.jpeg'  
+      image: '/src/components/images/plan.jpeg'  
     },
     {
       id: 3,
       name: 'Casein Protein',
       description: 'Slow-digesting protein for overnight muscle repair.',
       price: '$29.99',
-      image: '/src/components/images/case.jpeg'  
+      image: '/src/components/images/one.jpeg'  
     },
     {
       id: 4,
@@ -64,12 +65,13 @@ function Shopping() {
       name: 'L-Glutamine',
       description: 'Supports muscle recovery and immune system health.',
       price: '$17.99',
-      image: '/src/components/images/guran.jpeg'
+      image: '/src/components/images/cusst.jpeg'
     }
   ];
 
   return (
     <div className={styles.shoppingContainer}>
+      <Navbar/>
       <h1>Shopping for Gym Proteins</h1>
       <button onClick={toggleCart} className={styles.cartButton}>
         {isCartOpen ? 'Close Cart' : 'View Cart'}

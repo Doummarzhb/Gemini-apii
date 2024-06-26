@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './SocialPage.module.css';
+import Navbar from '../../components/Navbar';
 
 function SocialPage() {
   const [posts, setPosts] = useState([]);
@@ -35,6 +36,7 @@ function SocialPage() {
 
   return (
     <div className={styles.socialPageContainer}>
+        <Navbar/>
       <h1>Community</h1>
       <form onSubmit={handlePostSubmit} className={styles.postForm}>
         <textarea

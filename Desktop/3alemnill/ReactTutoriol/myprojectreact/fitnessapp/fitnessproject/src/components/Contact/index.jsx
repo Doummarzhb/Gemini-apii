@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from './Contact.module.css';
+import Navbar from '../Navbar';
 
 function Contact() {
   return (
     <div className={styles.contactContainer}>
+      <Navbar/>
       <h1>Contact Us</h1>
       <div className={styles.contactGrid}>
         <div className={styles.contactItem}>

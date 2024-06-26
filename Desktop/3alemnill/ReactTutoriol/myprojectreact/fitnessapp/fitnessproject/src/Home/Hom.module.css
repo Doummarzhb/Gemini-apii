@@ -8,7 +8,9 @@
   }
   
   .homeText {
-    color: red;
+    color: white;
+    font-size: 2rem;
+    
   }
   .welcomeMessage {
     text-align: left;
@@ -53,7 +55,7 @@
     background-color: rgb(184, 128, 128);
   }
   .paragraph1 {
-    color: red;
+    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   /* .navIt{

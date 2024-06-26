@@ -73,6 +73,7 @@
 import React, { useState } from 'react';
 import './Signup.module.css';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../Navbar';
 
 function SignUp() {
   const [formData, setFormData] = useState({
@@ -108,6 +109,7 @@ function SignUp() {
     <div className='center'> 
       <div className="signup-container">
         <form className="signup-form" onSubmit={handleSubmit}>
+          <Navbar/>
           <h1>Sign Up</h1>
           <div className="form-group">
             <label htmlFor="name">Name</label>

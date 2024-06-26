@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './Reservation.module.css'; 
+import Navbar from '../../components/Navbar';
 
 function Reservation() {
   const [formData, setFormData] = useState({
@@ -28,6 +29,7 @@ function Reservation() {
 
   return (
     <div className={styles.reservationContainer}>
+      <Navbar/>
       <h1 id='resss'>Reservation Form</h1>
       {/* <span>Please fill out the form below to make a reservation.</span> */}
       <form className={styles.form} onSubmit={handleSubmit}>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // import './Signup.module.css';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../Navbar';
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -35,6 +36,7 @@ function Login() {
     <div className='center'> 
       <div className="signup-container">
         <form className="signup-form" onSubmit={handleSubmit}>
+             <Navbar/>
           <h1>Login</h1>
           <div className="form-group">
             <label htmlFor="email">Email</label>

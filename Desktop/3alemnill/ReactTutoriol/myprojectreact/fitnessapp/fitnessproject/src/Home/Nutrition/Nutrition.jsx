@@ -1,5 +1,6 @@
 import React, { useState ,useEffect} from 'react';
 import './Nutrition.css'; 
+import Navbar from '../../components/Navbar';
 
 function Nutrition() {
   
@@ -44,7 +45,8 @@ function Nutrition() {
 
   return (
     <div className="nutrition-container">
-      <h2>Nutrition Tracking </h2>
+        <Navbar/>
+      <h1>Nutrition Tracking </h1>
 
 
       <form onSubmit={handleFormSubmit}>
