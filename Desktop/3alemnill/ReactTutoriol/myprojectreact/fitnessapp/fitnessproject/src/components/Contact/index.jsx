@@ -8,16 +8,16 @@ function Contact() {
       <div className={styles.contactGrid}>
         <div className={styles.contactItem}>
           <h2>Our Address</h2>
-          <p>123 Fitness St.</p>
-          <p>Gym City, Tripoli</p>
+          <p className='abous'>123 Fitness St.</p>
+          <p className='abous'>Gym City, Tripoli</p>
         </div>
         <div className={styles.contactItem}>
           <h2>Email Us</h2>
-          <p>info@gym.com</p>
+          <p className='abous'>info@gym.com</p>
         </div>
         <div className={styles.contactItem}>
           <h2>Call Us</h2>
-          <p>71612665</p>
+          <p className='abous'>71612665</p>
         </div>
     
       </div>

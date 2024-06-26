@@ -38,7 +38,7 @@
     height: auto;  
   }
   
-  .button {
+  .buttonn {
     margin-top: 10px;  
     padding: 10px 20px;
     color: red;
@@ -55,9 +55,12 @@
   .paragraph1 {
     color: red;
   }
-  .navIt{
-     margin-left:900px;
-  }
-  .navLi{
-    margin-left: 200px;
+  /* .navIt{
+     margin-left:500px;
+  } */
+  /* .navLi{
+    margin-left: 300px;
+  } */
+  .navaLi{
+    margin-left:900px;
   }

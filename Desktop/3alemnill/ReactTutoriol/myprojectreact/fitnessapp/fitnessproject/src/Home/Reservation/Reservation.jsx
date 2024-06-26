@@ -23,7 +23,7 @@ function Reservation() {
   const handleSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem('reservationData', JSON.stringify(formData));
-    navigate('/'); 
+    navigate('/home'); 
   };
 
   return (

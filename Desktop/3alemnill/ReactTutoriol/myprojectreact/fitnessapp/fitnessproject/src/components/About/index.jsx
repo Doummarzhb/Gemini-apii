@@ -27,9 +27,9 @@ function About() {
       since before TikTok was a thing. Get our latest expert moves, pro-tips, and recommendations for who to follow.
       </p>
       <p>
-        Sed at diam vel justo molestie vestibulum. Proin dapibus turpis vel
-        justo hendrerit auctor. Morbi ac turpis malesuada, feugiat urna ac,
-        fermentum ex. Sed eleifend nec leo nec suscipit.
+      Fitness is a multifaceted concept that encompasses physical health, mental well-being, and overall vitality.
+       Achieving and maintaining a good level of fitness is essential for leading a healthy and fulfilling life. Here,
+       we delve into the core aspects of fitness, its benefits, and how to integrate it into your daily routine.
       </p>
       
       <span className={styles.highlight}>Fitness is key to success!</span>

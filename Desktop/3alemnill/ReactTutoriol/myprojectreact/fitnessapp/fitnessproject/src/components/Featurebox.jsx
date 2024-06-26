@@ -8,10 +8,11 @@ function Featurebox(props) {
         </div>
         <div className='a-b-text'>
             <h2>{props.title}</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-               Alias beatae quam ad 
-              dolorem deleniti ullam illo nemo suscipit quas at quis eos laborum,
-               iure, maxime itaque qui, facere asperiores eum?</p>
+            <p>
+Gym tools encompass a variety of equipment designed to enhance physical fitness,
+ including free weights, machines, and accessories for strength training, cardio,
+  and flexibility exercises.
+ They cater to different fitness goals, from muscle building to endurance improvement and overall health.</p>
         </div>
       
     </div>

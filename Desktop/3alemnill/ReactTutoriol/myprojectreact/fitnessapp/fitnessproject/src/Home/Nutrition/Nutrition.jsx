@@ -44,12 +44,12 @@ function Nutrition() {
 
   return (
     <div className="nutrition-container">
-      <h3>Nutrition Tracking </h3>
+      <h2>Nutrition Tracking </h2>
 
 
       <form onSubmit={handleFormSubmit}>
         <div className="form-grouppe">
-          {/* <label>نوع الوجبة:</label> */}
+          
           <label>Meal Type:</label>
           <input
             type="text"

@@ -3,39 +3,38 @@
   margin: 0 auto;
   padding: 20px;
 color:white;
-  
   text-align: justify;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
- 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
 .about h2 {
-  color: #ff0000; /* Red heading */
+  /* color: #ff0000;  */
   text-align: center;
-  grid-column: 1 / span 2; /* Span across two columns */
+  grid-column: 1 / span 2; 
 }
 
 .about p {
   margin-bottom: 10px;
 }
 
-.highlight {
-  color: #ff0000; /* Red text */
+.highlight{
+  /* color: #ff0000;  */
+  background-color: #ff0000;
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
-  background-color: #000000; /* Black background */
-  color: #ffffff; /* White text */
+  background-color: #000000;  
+  color: #ffffff;  
   padding: 10px;
   display: inline-block;
-  grid-column: 1 / span 2; /* Span across two columns */
+  grid-column: 1 / span 2;  
   transition: background-color 0.3s ease;
 }
 
 .highlight:hover {
-  background-color: #ff0000; /* Red background on hover */
-  color: #ffffff; /* White text on hover */
+  background-color: #ff0000;  
+  color: #ffffff;  
 }

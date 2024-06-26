@@ -1,8 +1,6 @@
 .contactContainer {
-    padding: 20px;
-    /* background-color: white; */
+    padding: 20px;   
     color: red;
-    /* max-width: 1200px; */
     margin: 0 auto;
   }
   
@@ -19,11 +17,11 @@
   }
   
   .contactItem {
-    /* background-color: #fff; */
     border: 1px solid red;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
   
   .contactForm {
@@ -40,11 +38,11 @@
     margin-bottom: 15px;
   }
   
-  label {
+  /* label {
     display: block;
     margin-bottom: 5px;
     color: red;
-  }
+  } */
   
   input, textarea {
     width: 100%;
@@ -62,7 +60,10 @@
     cursor: pointer;
   }
   
-  button:hover {
+  /* button:hover {
     background-color: darkred;
   }
-  
+   */
+   /* .abous{
+    text-align: center;
+   } */

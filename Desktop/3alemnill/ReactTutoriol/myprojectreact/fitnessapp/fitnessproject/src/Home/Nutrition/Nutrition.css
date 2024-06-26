@@ -1,11 +1,11 @@
-h3{
+h2{
     text-align: center;
-    color: white;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 .nutrition-container {
     max-width: 800px;
     margin: 0 auto;
+    margin-top: 20px;
     padding: 20px;
     /* background-color: #f0f0f0; */
     border: 1px solid #ccc;
@@ -40,7 +40,7 @@ h3{
   
   button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: red;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -61,9 +61,9 @@ h3{
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  button:hover {
-    background-color: #0056b3;
-  }
+  /* button:hover {
+    background-color: white;
+  } */
   
   .meals-list {
     margin-top: 20px;

@@ -10,7 +10,7 @@
   h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    /* color: #333; */
   }
   
   .userInfo, .reservationData, .cartData {
@@ -28,7 +28,8 @@
   
   h2 {
     margin-bottom: 10px;
-    color: #666;
+    /* color: #666; */
+    color: white;
   }
   
   ul {
