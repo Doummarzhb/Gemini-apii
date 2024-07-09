@@ -1,0 +1,45 @@
+.my-account-container {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  /*
+  .profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .profile-section h2 {
+    color: var(--secondary-color);
+  }
+  
+  .profile-section p {
+    color: var(--white);
+  }
+  
+  .reservations-section,
+  .nutrition-section,
+  .training-sessions-section {
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+  }
+.emails{
+    text-align: center;
+} */

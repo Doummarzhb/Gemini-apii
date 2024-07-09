@@ -1,0 +1,47 @@
+ .abouts{
+  text-align: center;
+  color:#f9ac54 ;
+  background-color: var(  --primary-color-light);
+ 
+}
+/*
+.ab{
+  background-color: var( --primary-color-light);
+}*/
+
+
+  .ab {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 20px;
+    padding: 20px; */
+ 
+  }
+  
+  .classImg12 {
+    /* width: 300px;   */
+    border-radius: 25%;
+    height: auto;  
+    border-radius: 25%;  
+  }
+  
+  .papa {
+    flex: 1; 
+    margin-top: -200px;
+  
+  }
+  
+  .parag {
+    display: flex;
+    align-items: center;
+   
+
+  }
+  .btnsa{
+    margin-top: 220px;
+    margin-right: 220px;
+  }
+  h2{
+    font-size: 30px;
+  }
