@@ -8,7 +8,7 @@ const Main = () => {
   return (
     <div className='main'>
         <div className='nav'>
-            <p>Gemini with D</p>
+            <p>Gemini with Doummar</p>
             <img src={assets.user_icon} alt=''/>
         </div>
       <div className='main-container'>
